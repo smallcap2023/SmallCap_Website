@@ -1,0 +1,210 @@
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Bootstrap multicolumn form</title>
+  <!-- so this is an online link for linking bootstarp files -->
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<script>
+
+
+  function myFunction() {
+    var x = document.getElementById("myDiv");
+     
+     
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    }
+    else {
+      x.style.display = "none";
+    }
+
+
+  }
+  function nor(){
+    var x = document.getElementById("myDiv");
+    
+    x.style.display="none";
+    
+  }
+  
+
+  </script>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 column col-sm-offset-0 col-md-offset-2 col-lg-offset-3">
+        <form class="form-horizontal">
+          <fieldset>
+            <!-- Form Name -->
+            <legend>CUSTOMER INFO</legend>
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="textinput">NAME:</label>
+              <div class="col-md-3">
+                <input id="textinput" name="textinput" type="text" placeholder="JACK HILL.eg" class="form-control input-md" />
+              </div>
+              <br />
+              <br>
+              <div class="form-group">
+                <label class="col-md-3 control-label" for="textinput">EMAIL:</label>
+                <div class="col-md-3">
+                  <input id="textinput" name="textinput" type="text" placeholder="jack@gmail.com.eg" class="form-control input-md" />
+                </div>
+                <br />
+                <br>
+
+                <div class="form-group">
+                  <label class="col-md-3 control-label" for="textinput">PASSWORD:</label>
+                  <div class="col-md-3">
+                    <input id="textinput" name="textinput" type="password" placeholder="j@ck1234.eg" class="form-control input-md" />
+                  </div>
+                  <br />
+                  <br>
+                  <div class="form-group">
+                    <label class="col-md-3 control-label" for="textinput">CONFIRM PASSWORD:</label>
+                    <div class="col-md-3">
+                      <input id="textinput" name="textinput" type="password" placeholder="j@ck1234.eg" class="form-control input-md" />
+                    </div>
+                    <br />
+                    <br>
+                    <br>
+              <!-- Select Basic -->
+              <div class="form-group">
+                <label class="col-md-3 control-label" for="selectbasic">STATE:-</label>
+                <div class="col-md-9">
+                  <select id="selectbasic" name="selectbasic" class="form-control">
+                    <option value="1">GOA</option>
+                    <option value="2">MAHARHASTRA</option>
+                    <option value="3">GUJRAT</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Multiple Radios (inline) -->
+
+              <label class="col-md-3 control-label" for="radios">
+                GENDER:
+              </label>
+              <div class="col-md-3">
+                <label class="" for="radios-0">
+                  <input type="radio" name="radios" id="radios-0" value="1" checked="checked" />
+                  MALE
+                </label>
+                <label class="" for="radios-1">
+                  <input type="radio" name="radios" id="radios-1" value="2" />
+                  FEMALE
+                </label>
+                <label class="" for="radios-2">
+                  <input type="radio" name="radios" id="radios-1" value="2" />
+                  OTHERS
+                </label>
+              </div>
+            </div>
+            <br>
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="textinput">DOB:
+              </label>
+              <div class="col-md-3">
+                <input id="textinput" name="textinput" type="date" placeholder="placeholder"
+                  class="form-control input-md" />
+              </div>
+              <!--              
+              <label class="col-md-1 control-label" for="textinput">Hasta:
+              </label>
+              <div class="col-md-4">
+                <input id="textinput" name="textinput" type="date" placeholder="placeholder"
+                  class="form-control input-md" />
+              </div> -->
+            </div>
+
+            <!-- Textarea -->
+            <!-- <div class="form-group">
+              <label class="col-md-3 control-label" for="textarea">Text Area</label>
+              <div class="col-md-9">
+                <textarea class="form-control" id="textarea" name="textarea">default text</textarea>
+              </div>
+            </div> -->
+
+            <div class="form-group" >
+              <label class="col-md-3 control-label" for="selectbasic">TYPE OF ACCOUNT:</label>
+              <div class="col-md-9">
+                <select id="selectbasic" name="selectbasic" class="form-control">
+                  <option value="1" id="normal" onclick="nor()" >NORMAL</option>
+                  <option value="2"  onclick="myFunction()">BUSSINESS </option>    
+                </select>
+              </div>
+            </div>
+            
+            <br>
+          <div id="myDiv">
+            <div class="form-group" >
+              <label class="col-md-3 control-label" for="selectbasic">CHOOSE CATEGORY:</label>
+              <div class="col-md-9">
+                <select id="selectbasic" name="selectbasic" class="form-control">
+                  <option value="CARPINTER" >CARPINTER</option>
+                  <option value="CHEF" >CHEF</option>
+                  <option value="GARDERNER" >GARDERNER</option>
+                  <option value="ELECTRICIAN" >ELECTRICIAN</option> 
+                  <option value="PLUMBER" >PLUMBER</option>
+                  <option value="MACHANICS">MACHANICS</option>
+                  <option value="">OTHERS <input type="text" placeholder="other#"></option> 
+
+                </select>
+              </div>
+              <br>
+              <script>
+                document.getElementById("myDiv").style.display = "none";
+              </script>
+              
+            </div>
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="textinput">MOBILE NO:</label>
+              <div class="col-md-3">
+                <input id="textinput" name="textinput" type="tel" placeholder="123456789" class="form-control input-md" />
+              </div>
+              <br>
+              <br>
+
+               <!-- Textarea -->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="textarea">FULL ADDRESS:</label>
+              <div class="col-md-9">
+                <textarea class="form-control" id="textarea" name="textarea">address</textarea>
+              </div>
+            </div>
+          </div>
+
+            
+
+
+
+
+
+            <!-- Button (Double) -->
+           
+          </fieldset>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-md-3 control-label" for="button1id"></label>
+    <div class="col-md-8">
+      <button id="button1id" name="button1id" class="btn btn-success">
+        Ok
+      </button>
+      <button id="button2id" name="button2id" class="btn btn-danger">
+        Cancel
+      </button>
+    </div>
+  </div>
+</body>
+
+</html>
