@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+ <p>Click the "Check" button to unhide Submit Button</p>
+<div id="loading">
+  <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" />
+</div>
+<div id="myDIV">
+    CLICK CHECK BUTTON.
+    <button onclick="myFunction()">Check</button>
+</div>
+
+<div id="mynewDIV">
+    SUBMIT BUTTON.
+    <button>Submit</button>
+</div>
+
+<script>
+            var x = document.getElementById('mynewDIV');
+    x.style.display = 'none';
+    var img = document.getElementById('loading');
+    img.style.display = 'none';
+
+    function myFunction() {
+                   var y = document.getElementById('myDIV');
+            $("#myDIV").slideUp("slow", function(){
+              y.style.display = 'none';
+              var img = document.getElementById('loading');
+              img.style.display = 'block';
+            });
+
+            var y = document.getElementById('mynewDIV');
+            $("#mynewDIV").delay(3000).slideDown("slow", function(){
+              var img = document.getElementById('loading');
+              img.style.display = 'none';
+              y.style.display = 'block';
+             });
+
+        }
+</script>
+
+
+    </body>
+
+    </html>
