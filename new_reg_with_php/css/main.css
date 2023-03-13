@@ -178,11 +178,11 @@ h6 {
 } */
 
 .bg-gra-02 {
-  background: -webkit-gradient(linear, left bottom, right top, from(#fc2c77), to(#6c4079));
-  background: -webkit-linear-gradient(bottom left, #fc2c77 0%, #6c4079 100%);
-  background: -moz-linear-gradient(bottom left, #fc2c77 0%, #6c4079 100%);
-  background: -o-linear-gradient(bottom left, #fc2c77 0%, #6c4079 100%);
-  background: linear-gradient(to top right, #fc2c77 0%, #6c4079 100%);
+  background: -webkit-gradient(linear, left bottom, right top, from(#fff), to(#12780d));
+  background: -webkit-linear-gradient(bottom left, #8df18d 0%, #12780d 100%);
+  background: -moz-linear-gradient(bottom left, #8df18d 0%, #12780d 100%);
+  background: -o-linear-gradient(bottom left, #8df18d 0%, #12780d 100%);
+  background: linear-gradient(to top right, #8df18d 0%, #12780d 100%);
 }
 
 /* ==========================================================================
@@ -576,67 +576,4 @@ input {
 }
 
 .rs-select2 .select2-container.select2-container--open .select2-selection--single .select2-selection__arrow::after {
-  -webkit-transform: rotate(-180deg);
-  -moz-transform: rotate(-180deg);
-  -ms-transform: rotate(-180deg);
-  -o-transform: rotate(-180deg);
-  transform: rotate(-180deg);
-}
-
-.select2-container--open .select2-dropdown--below {
-  border: none;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  border: 1px solid #e0e0e0;
-  margin-top: 5px;
-  overflow: hidden;
-}
-
-.select2-container--default .select2-results__option {
-  padding-left: 22px;
-}
-
-/* ==========================================================================
-   #TITLE
-   ========================================================================== */
-.title {
-  font-size: 24px;
-  color: #525252;
-  font-weight: 400;
-  margin-bottom: 40px;
-}
-
-/* ==========================================================================
-   #CARD
-   ========================================================================== */
-.card {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background: #fff;
-}
-
-.card-4 {
-  background: #fff;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-}
-
-.card-4 .card-body {
-  padding: 57px 65px;
-  padding-bottom: 65px;
-}
-
-@media (max-width: 767px) {
-  .card-4 .card-body {
-    padding: 50px 40px;
-  }
-}
+  -webkit-transform: rotate(-18
