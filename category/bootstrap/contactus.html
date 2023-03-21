@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color:lightgreen
+		}
+
+		h1 {
+			color: black;
+			text-align: center;
+			margin-top: 50px;
+		}
+        p{
+            text-align: center;
+        }
+
+		form {
+			margin: 50px auto;
+			width: 80%;
+			max-width: 600px;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+
+		input,
+		textarea {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: none;
+			border-radius: 3px;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+			font-size: 16px;
+			font-family: inherit;
+		}
+
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #555;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Contact Us</h1>
+	<p>Please fill out the form below to contact us.</p>
+	<form action="submit-form.php" method="POST">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="subject">Subject:</label>
+		<input type="text" id="subject" name="subject" required>
+
+		<label for="message">Message:</label>
+		<textarea id="message" name="message" required></textarea>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
